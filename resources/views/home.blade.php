@@ -1248,10 +1248,8 @@
     <script src="../public/azia-admin-master/lib/bootstrap/js/bootstrap.bundle.min.js"></script>
     <script src="../public/azia-admin-master/lib/ionicons/ionicons.js"></script>
     <script src="../public/azia-admin-master/lib/peity/jquery.peity.min.js"></script>
-
     <script src="../public/azia-admin-master/js/azia.js"></script>
     <script type="text/javascript" src="{{URL::asset('/js/dashboard.js') }}"></script>
-
     <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.3/Chart.bundle.js" type="text/javascript"></script>
     
 
