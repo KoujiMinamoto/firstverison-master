@@ -268,8 +268,7 @@ function onclickHeader(headerName) {
             $(".nav-profile_id").addClass("clickOn");
             document.getElementById("profile_div_id").style.display = "block";
             break;
-        case 2:
-            
+        case 2:       
             document.getElementById("homepage_div_id").style.display = "block";
             $(".home").addClass("clickOn");
             $("#login_id").html('dashboard');
@@ -277,6 +276,15 @@ function onclickHeader(headerName) {
             document.getElementById("home_div_id").style.display = "block";
             document.getElementById("dashboard_user_div_id").style.display = "none";
             document.getElementById("dashboard_admin_div_id").style.display = "none";
+            break;
+        case 3:
+            document.getElementById("dashboard_user_div_id").style.display = "block";  
+            document.getElementById("dashboard_user_div_div_id").style.display = "none";
+            document.getElementById("profile_user_div_id").style.display = "block";
+            break;
+        case 4:
+            document.getElementById("dashboard_user_div_id").style.display = "block";
+            document.getElementById("dashboard_user_div_div_id").style.display = "block";
             break;
         default :
             break;
@@ -288,6 +296,8 @@ function onreset() {
     $(".nav-profile_id").removeClass("clickOn");
     document.getElementById("dashboard_div_id").style.display = "none";
     document.getElementById("profile_div_id").style.display = "none";
+    document.getElementById("dashboard_user_div_div_id").style.display = "none";
+    document.getElementById("profile_user_div_id").style.display = "none";
     
     
 }

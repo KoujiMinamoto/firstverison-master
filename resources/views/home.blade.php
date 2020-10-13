@@ -1052,7 +1052,73 @@
         </div>
         <!-- profile -->
         <div class = "pro_div" id="profile_div_id" style="display:none">
-        <h6 class="card-title">Page Views by Page Title</h6>
+            <div class="container">
+                <h6 class="card-title">Page Views by Page Title</h6>
+
+                <form>
+                    
+                            
+                            <div class="form-group">
+
+                                <label for=email>Email</label>
+                                <input type="email" class="form-control" id="email_change">
+
+                            </div>
+                            <div class="form-group">
+
+                                <label for=pass>Password</label>
+                                <input type="password" class="form-control" id="pass_change">
+
+                            </div>
+                            <div class="form-group">
+
+                                <label for=phone>Phone Number</label>
+                                <input type="text" class="form-control" id="phonenum_change">
+
+                            </div>
+                            <div class="form-group ">
+
+                                <label for=birthday>Address</label>
+                                <input type="text" class="form-control" id="address_change">
+
+                            </div>
+                            <div class="form-group ">
+
+                                <label for=birthday>Suburb</label>
+                                <input type="text" class="form-control" id="suburb_change">
+
+                            </div>
+                            <div class="form-group ">
+
+                                <label for=birthday>State</label>
+                                <input type="text" class="form-control" id="state_change">
+
+                            </div>
+                            <div class="form-group ">
+
+                                <label for=birthday>Postcode</label>
+                                <input type="text" class="form-control" id="postcode_change">
+
+                            </div>
+                            
+                            <div class="row mt-5">
+                            
+                                <div class="col">
+                                
+                                    <button type="button" class="btn btn-primary btn-block">Save Changes</button>
+                                
+                                </div>
+                                
+                                <div class="col">
+                                
+                                    <button type="button" class="btn btn-default btn-block">Cancel</button>
+                                
+                                </div>
+                            
+                            </div>
+
+                </form>
+            </div>
         </div>
     </div>
 
@@ -1072,11 +1138,11 @@
                 <a href="" class="close">×</a>
             </div><!-- az-header-menu-header -->
             <ul class="nav">
-                        <li class="nav-item" id="nav-dashboard_id" onclick="onclickHeader(0)">
+                        <li class="nav-item" id="nav-dashboard_id" onclick="onclickHeader(4)">
                         <a class="nav-link" type = "button"><i class="typcn typcn-chart-area-outline"></i> Dashboard</a>
                         </li>
                         
-                        <li class="nav-item" id="nav-profile_id" onclick="onclickHeader(1)">
+                        <li class="nav-item" id="nav-profile_id" onclick="onclickHeader(3)">
                         <a class="nav-link" type = "button"><i class="typcn typcn-chart-bar-outline"></i> Profile</a>
                         </li>
                         <li class="nav-item" id="nav-home_id" onclick="onclickHeader(2)">
@@ -1100,7 +1166,7 @@
 
 
 
-        <div class="az-content az-content-dashboard">
+        <div class="az-content az-content-dashboard" id="dashboard_user_div_div_id" style="display:block">
         <div class="container">
             <div class="az-content-body">
             <div class="az-dashboard-one-title">
@@ -1202,8 +1268,78 @@
             </div><!-- row -->
             </div><!-- az-content-body -->
         </div>
-        </div>
+        
 
+        <!-- profile -->
+        <div class = "pro_div" id="profile_user_div_id" style="display:none">
+            <div class="container">
+                <h6 class="card-title">Page Views by Page Title</h6>
+
+                <form>
+                    
+                            
+                            <div class="form-group">
+
+                                <label for=email>Email</label>
+                                <input type="email" class="form-control" id="email_change">
+
+                            </div>
+                            <div class="form-group">
+
+                                <label for=pass>Password</label>
+                                <input type="password" class="form-control" id="pass_change">
+
+                            </div>
+                            <div class="form-group">
+
+                                <label for=phone>Phone Number</label>
+                                <input type="text" class="form-control" id="phonenum_change">
+
+                            </div>
+                            <div class="form-group ">
+
+                                <label for=birthday>Address</label>
+                                <input type="text" class="form-control" id="address_change">
+
+                            </div>
+                            <div class="form-group ">
+
+                                <label for=birthday>Suburb</label>
+                                <input type="text" class="form-control" id="suburb_change">
+
+                            </div>
+                            <div class="form-group ">
+
+                                <label for=birthday>State</label>
+                                <input type="text" class="form-control" id="state_change">
+
+                            </div>
+                            <div class="form-group ">
+
+                                <label for=birthday>Postcode</label>
+                                <input type="text" class="form-control" id="postcode_change">
+
+                            </div>
+                            
+                            <div class="row mt-5">
+                            
+                                <div class="col">
+                                
+                                    <button type="button" class="btn btn-primary btn-block">Save Changes</button>
+                                
+                                </div>
+                                
+                                <div class="col">
+                                
+                                    <button type="button" class="btn btn-default btn-block">Cancel</button>
+                                
+                                </div>
+                            
+                            </div>
+
+                </form>
+            </div>
+        </div>
     </div>
 
 
