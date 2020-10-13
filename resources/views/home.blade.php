@@ -783,34 +783,42 @@
                     <form class="register_div_form">
                         <div class="register_div_form_group">
                             <input type="text" placeholder="Username" class="register_div_form_input" />
+                            <div class= "checkmsg" id = "usernamecheckmsg"></div>
                         </div>
                         
                         <div class="register_div_form_group">
                             <input type="email" placeholder="Email" class="register_div_form_input" />
+                            <div class= "checkmsg" id = "emailcheckmsg"></div>
                         </div>
                         
                         <div class="register_div_form_group">
                             <input type="password" placeholder="Password" class="register_div_form_input" />
+                            <div class= "checkmsg" id = "passwdcheckmsg"></div>
                         </div>
 
                         <div class="register_div_form_group">
                             <input type="tel" placeholder="Phone number" class="register_div_form_input" />
+                            <div class= "checkmsg" id = "phonenumcheckmsg"></div>
                         </div>
 
                         <div class="register_div_form_group">
                             <input type="text" placeholder="Address" class="register_div_form_input" />
+                            <div class= "checkmsg" id = "addresscheckmsg"></div>
                         </div>
 
                         <div class="register_div_form_group">
                             <input type="text" placeholder="Suburb" class="register_div_form_input" />
+                            <div class= "checkmsg" id = "suburbcheckmsg"></div>
                         </div>
 
                         <div class="register_div_form_group">
                             <input type="text" placeholder="State" class="register_div_form_input" />
+                            <div class= "checkmsg" id = "statecheckmsg"></div>
                         </div>
 
                         <div class="register_div_form_group">
                             <input type="text" placeholder="Postcode" class="register_div_form_input" />
+                            <div class= "checkmsg" id = "postcodecheckmsg"></div>
                         </div>
                         
                         <button class="register_div_btn" type="button" onclick="userRegister()">Register</button>

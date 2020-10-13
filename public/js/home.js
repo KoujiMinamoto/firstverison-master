@@ -249,7 +249,8 @@ function userLogin(){
 //user register need to move to a new file
 
 function userRegister() {
-
+    clearMsg();
+    var regExp = /\w+([-+.]\w+)*@\w+([-.]\w+)*\.\w+([-.]\w+)*/;
     let register = {
         "userName":$(".register_div_form_input").eq(0).val(),
         "email":$(".register_div_form_input").eq(1).val(),
@@ -260,8 +261,26 @@ function userRegister() {
         'state':$(".register_div_form_input").eq(6).val(),
         'postcode':$(".register_div_form_input").eq(7).val()
     };
-    
-    $.ajax({
+    if(register.userName == null || register.userName ==""){
+        document.getElementById('usernamecheckmsg').innerHTML='Please enter your username';
+    }else if(register.email == null || register.email ==""){
+        document.getElementById('emailcheckmsg').innerHTML='Please enter your email';
+    }else if(!regExp.test(register.email)){
+        document.getElementById('emailcheckmsg').innerHTML='Email Address must be valid';
+    }else if(register.password == null || register.password ==""|| register.password.length < 8){
+        document.getElementById('passwdcheckmsg').innerHTML='Password must be at least 8 characters long';
+    }else if(register.phoneNumber == null || register.phoneNumber =="" || register.phoneNumber.length != 10){
+        document.getElementById('phonenumcheckmsg').innerHTML='Please enter your phonenumber, should be in 10 numbers';
+    }else if(register.address == null || register.address ==""){
+        document.getElementById('addresscheckmsg').innerHTML='Please enter your address';
+    }else if(register.subrub == null || register.subrub ==""){
+        document.getElementById('suburbcheckmsg').innerHTML='Please enter your suburb';
+    }else if(register.state == null || register.state ==""){
+        document.getElementById('statecheckmsg').innerHTML='Please enter your state';
+    }else if(register.postcode == null || register.postcode ==""){
+        document.getElementById('postcodecheckmsg').innerHTML='Please enter your postcode';
+    }else{
+        $.ajax({
         type: "POST",
         url: "api/userRegister",
         dataType:'json',
@@ -278,5 +297,24 @@ function userRegister() {
         error: function (XMLHttpRequest, textStatus, thrownError) {
         }
     });
+    }
 
+}
+
+function clearMsg() {
+    document.getElementById('usernamecheckmsg').innerHTML='';
+
+    document.getElementById('emailcheckmsg').innerHTML='';
+
+    document.getElementById('passwdcheckmsg').innerHTML='';
+
+    document.getElementById('phonenumcheckmsg').innerHTML='';
+
+    document.getElementById('addresscheckmsg').innerHTML='';
+
+    document.getElementById('suburbcheckmsg').innerHTML='';
+
+    document.getElementById('statecheckmsg').innerHTML='';
+
+    document.getElementById('postcodecheckmsg').innerHTML='';
 }
