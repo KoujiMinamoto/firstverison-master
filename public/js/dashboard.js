@@ -271,7 +271,7 @@ function onclickHeader(headerName) {
         case 2:       
             document.getElementById("homepage_div_id").style.display = "block";
             $(".home").addClass("clickOn");
-            $("#login_id").html('dashboard');
+            $("#login_id").html('my account');
             $("#register_id").html('logout');
             document.getElementById("home_div_id").style.display = "block";
             document.getElementById("dashboard_user_div_id").style.display = "none";

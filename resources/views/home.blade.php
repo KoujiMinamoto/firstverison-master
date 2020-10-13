@@ -611,7 +611,7 @@
                     <img src="{{URL::asset('/image/Contact.jpg') }}" width=90% height=80%>
                 </div>
                 <div class="design_div_rightContainer">
-                        <!-- Feedback Form Starts Here -->
+                    <!-- Feedback Form Starts Here -->
                     <div id="feedback">
                     <!-- Heading Of The Form -->
                     <div class="head">
@@ -619,25 +619,26 @@
                     <p>This is feedback form. Send us your feedback !</p>
                     </div>
                     <!-- Feedback Form -->
-                    <form action="#" id="form" method="post" name="form">
-                    <input class="contact_div_vname" id="contact_div_vname"placeholder="Your Name" type="text" align="center">
-                    <input class="contact_div_vemail" id="contact_div_vemail"placeholder="Your Email" type="text" align="center">
-                    <input class="contact_div_sub" id="contact_div_sub"placeholder="Subject" type="text" align="center">
+                    <form action="mailto:sy135673@gmail.com" id="form" method="post" name="form" enctype="text/plain">
+                    <input class="contact_div_vname" id="contact_div_vname"placeholder="Your Name" type="text" name="Name" align="center">
+                    <input class="contact_div_vemail" id="contact_div_vemail"placeholder="Your Email" type="text" name="Email" align="center">
+                    <input class="contact_div_sub" id="contact_div_sub"placeholder="Subject" type="text" name="Subject" align="center">
                     <p>Your Suggestion/Feedback</p>
-                    <textarea class="contact_div_msg" id="contact_div_msg" placeholder="Type your text here..."></textarea>
+                    <textarea class="contact_div_msg" id="contact_div_msg" placeholder="Type your text here..." name="Message"></textarea>
                     <p></p>
-                    <input class="contact_div_send" id="contact_div_send" name="submit" type="submit" value="Send Feedback">
-                    </form>
-                    <h3><?php include "../resources/views/secure_email_code.php"?></h3>
+                    <input class="contact_div_send" id="contact_div_send"  type="submit" value="Send Feedback">
+                    </form> 
                     </div>
                     <!-- Feedback Form Ends Here -->       
                 </div>
 
                 <div style="clear: both;"></div>
 
-                <h3>Address</h3>
+                <h3 align="center">Address</h3>
                 <!--The div element for the map -->
-                <div id="map" style="width:100%;height:400px;"></div>
+                <div id="map" style="width:100%;height:400px;margin:auto;">
+                <div style="overflow:hidden;width: 80%;position: relative;margin:auto;"><iframe width="1000" height="440" src="https://maps.google.com/maps?width=700&amp;height=440&amp;hl=en&amp;q=26%20Metropolital%20Ave%20Nunawading%20VIC%203131+(%E6%A0%87%E9%A2%98)&amp;ie=UTF8&amp;t=&amp;z=13&amp;iwloc=B&amp;output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe><div style="position: absolute;width: 80%;bottom: 10px;left: 0;right: 0;margin-left: auto;margin-right: auto;color: #000;text-align: center;"><small style="line-height: 1.8;font-size: 2px;background: #fff;">Powered by <a href="https://embedgooglemaps.com/it/">embedgooglemaps IT</a> & <a href="http://trovalink.it">Trova link</a></small></div><style>#gmap_canvas img{max-width:none!important;background:none!important}</style></div><br />
+                </div>
           
 
                 </div>

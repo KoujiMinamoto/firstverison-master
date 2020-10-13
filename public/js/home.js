@@ -28,12 +28,13 @@ window.onload=function(){
 }
 
 function initPage() {
+    //判断是否登录状态
     window.localStorage.setItem('login', "logout");
     var storage=window.localStorage;
     var login =storage.login;
     console.log(login);
     if (login == "login"){
-        $("#login_id").html('dashboard');
+        $("#login_id").html('my account');
         $("#register_id").html('logout');
     }else{
         $("#login_id").html('login');
